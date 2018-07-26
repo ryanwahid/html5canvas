@@ -39,7 +39,16 @@ c.stroke();
 	c.stroke();
 }*/
 
+var mouse = {
+	x: undefined,
+	y: undefined
+}
 
+window.addEventListener('mousemove',
+	function(event) {
+	mouse.x = event.x;
+	mouse.y = event.y;
+	})
 
 function Circle(x, y, dx, dy, radius) {
 	this.x = x;
